@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+li a.active {
+  color: white;
+  background-color: #04AA6D;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="/">Home</a></li>
+  <li><a href="/train">Trainning</a></li>
+  <li><a href="/accuracy">Accuracy</a></li>
+  <li><a href="/predict">Predict</a></li>
+</ul>
+<table align=center>
+<form method="post" action="prediction">
+  <tr><td>Age</td><td><input type="text" name="t1" required></td></tr>
+  <tr><td>Sex</td><td><input type="text" name="t2" required></td></tr>
+  <tr><td>Chest pain type</td><td><input type="text" name="t3" required></td></tr>
+  <tr><td>BP</td><td><input type="text" name="t4" required></td></tr>
+  <tr><td>Cholesterol</td><td><input type="text" name="t5" required></td></tr>
+  <tr><td>FBS over 120</td><td><input type="text" name="t6" required></td></tr>
+  <tr><td>EKG results</td><td><input type="text" name="t7" required></td></tr>
+  <tr><td>Max HR</td><td><input type="text" name="t8" required></td></tr>
+  <tr><td>Exercise angina</td><td><input type="text" name="t9" required></td></tr>
+  <tr><td>ST depression</td><td><input type="text" name="t10" required></td></tr>
+  <tr><td>Slope of ST</td><td><input type="text" name="t11" required></td></tr>
+  <tr><td>Number of vessels fluro</td><td><input type="text" name="t12" required></td></tr>
+  <tr><td>Thallium</td><td><input type="text" name="t13" required></td></tr>
+<tr><td colspan=2 align=center><input type="submit" value="prediction"></td></tr>
+</form>
+</table>
+</body>
+</html>
+
+
